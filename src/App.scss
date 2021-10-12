@@ -1,0 +1,173 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Variables*/
+$font1: 'Roboto', sans-serif;
+$font2: 'Montserrat', sans-serif;
+$box-color: rgba(250, 250, 250, 0.10);
+$box-color-2: rgba(250, 250, 250, 0.2);
+$box-color-hover: rgba(250, 250, 250, 0.5);
+$twitter-blue: rgb(0, 172, 238);
+$shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+
+/*Styles*/
+body {  
+  margin: 0;  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('/src/assets/Gradient_bg_1.jpg');
+  background-size:cover;
+  height: 100vh;
+  min-height: 400px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+
+  .App {
+    position: relative;
+
+    width: 750px;
+    height: 350px;
+
+    background: $box-color;
+    box-shadow: $shadow;
+    backdrop-filter: blur(2px);
+    border-radius: 26px;
+
+    font-family: $font2;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.5s ease-out;
+    #quote-box{
+      height: 85%;
+      width: 90%;      
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      
+      #text{
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        font-size: 20px;        
+      }
+
+      #author{
+        width: 100%;
+        height: 10%;
+        margin-bottom: 25px;
+        text-align: center;
+
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      #new-quote{
+        width: 20%;
+        height: 10%;        
+
+        font-size: 15px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.6);
+        font-family: $font2;
+        cursor: pointer;
+
+        border-radius: 16px;
+        border: 0px;
+        background-color: $box-color-2;
+        box-shadow: $shadow;
+        
+        transition: all 0.5s ease-out;
+
+        &:hover{
+          background-color: $box-color-hover;          
+          transition: all 0.5s ease-out;
+        }
+        &:active{
+          box-shadow: inset -3px -3px 10px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+          transition: all 0.5s ease-out;
+        }
+      }      
+      #tweet-quote{
+        width: 100%;
+        text-align: right;
+        i{
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 30px;
+          transition: all 0.3s ease-out;
+          &:hover{
+            color: $twitter-blue;
+            transition: all 0.3s ease-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Media queries
+
+@media only screen and (max-width: 760px){
+  body{    
+    .App{
+      width: 600px;
+      transition: all 0.5s ease-out;
+      #quote-box{
+        #text{
+          font-size: 20px;
+        }
+        #author{
+          font-size: 17px;
+        }
+        #new-quote{
+          width: 40%;
+          height: 10%;
+        }
+        #tweet-quote{
+          text-align: center;
+          padding-top: 40px;
+        }
+      }
+    }    
+  }
+}
+
+@media only screen and (max-width: 620px){
+  body{    
+    .App{
+      width: 400px;
+      transition: all 0.5s ease-out;
+      #quote-box{
+        #text{
+          font-size: 20px;
+        }
+        #author{
+          font-size: 17px;
+        }
+        #new-quote{
+          width: 40%;
+          height: 10%;
+        }
+        #tweet-quote{
+          text-align: center;
+          padding-top: 40px;
+        }
+      }
+    }    
+  }
+}
