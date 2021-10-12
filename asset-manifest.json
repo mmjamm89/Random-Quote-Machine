@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Random-Quote_Machine/static/css/main.fe64f319.chunk.css",
+    "main.js": "/Random-Quote_Machine/static/js/main.6cca9e50.chunk.js",
+    "main.js.map": "/Random-Quote_Machine/static/js/main.6cca9e50.chunk.js.map",
+    "runtime-main.js": "/Random-Quote_Machine/static/js/runtime-main.67f83ba3.js",
+    "runtime-main.js.map": "/Random-Quote_Machine/static/js/runtime-main.67f83ba3.js.map",
+    "static/js/2.4d522ce8.chunk.js": "/Random-Quote_Machine/static/js/2.4d522ce8.chunk.js",
+    "static/js/2.4d522ce8.chunk.js.map": "/Random-Quote_Machine/static/js/2.4d522ce8.chunk.js.map",
+    "index.html": "/Random-Quote_Machine/index.html",
+    "static/css/main.fe64f319.chunk.css.map": "/Random-Quote_Machine/static/css/main.fe64f319.chunk.css.map",
+    "static/js/2.4d522ce8.chunk.js.LICENSE.txt": "/Random-Quote_Machine/static/js/2.4d522ce8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Random-Quote_Machine/static/media/Gradient_bg_1.4c1fc4ec.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67f83ba3.js",
+    "static/js/2.4d522ce8.chunk.js",
+    "static/css/main.fe64f319.chunk.css",
+    "static/js/main.6cca9e50.chunk.js"
+  ]
+}
